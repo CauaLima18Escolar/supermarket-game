@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    height: 100dvh;
+}
+
+img {
+    width: 100%;
+}
+
+.menu-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 200px;
+    padding: 24px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 1px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-actions button {
+    opacity: 0.6;
+    border: none;
+    padding: 16px;
+    width: 100px;
+    height: 100px;
+    background-color: #e6e6e6;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.menu-actions h3 {
+    transition: 0.3s;
+}
+
+.menu-actions button:hover {
+    opacity: 1;
+}
+
+.menu-actions button:hover ~ h3 {
+    font-size: 1.5rem;
+}
+
+.menu-actions div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.computer-window, .storage-window{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 350px;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    padding: 8px;
+    text-align: end;
+    background-color: #e6e6e6;
+    cursor: move;
+}
+
+.header button {
+    background-color: #ad1515;
+    color: #fff;
+    border-radius: 4px;
+    opacity: 0.5;
+    border: none;
+    padding: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.header button:hover {
+    opacity: 1;
+}
+
+.computer-content, .storage-content {
+    display: flex;
+    gap: 16px;
+    padding: 24px;
+}
+
+.computer-content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.computer-content div button {
+    border: none;
+    border-radius: 4px;
+    width: 80px;
+    height: 80px;
+    padding: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.computer-content div button:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+}
+
+.altShow_Window {
+    display: block;
+}

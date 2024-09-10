@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Supermarket - Simulator WEB</title>
+</head>
+<body>
+    <section class="menu-actions">
+        <div>
+            <button id="computer-btn">
+                <img src="./assets/computer.svg" alt="My Computer">
+            </button>
+
+            <h3>Computer</h3>
+        </div>
+
+        <div>
+            <button id="storage-btn">
+                <img src="./assets/storage.svg" alt="Market Storage">
+            </button>
+
+            <h3>Market <br> Storage</h3>
+        </div>
+    </section>
+
+    <section class="active-windows">
+        <div class="computer-window">
+            <div onmousedown="moveWindow(event)" class="header">
+                <button onclick="closeWindow(event)">Close window</button>
+            </div>
+            <div class="computer-content">
+                <div>
+                    <button>
+                        <img src="./assets/shop.svg" alt="">
+                    </button>
+
+                    <h3>Bank</h3>
+                </div>
+                <div>
+                    <button>
+                        <img src="./assets/bank.svg" alt="">
+                    </button>
+
+                    <h3>Shop</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="storage-window">
+            <div onmousedown="moveWindow(event)" class="header">
+                <button onclick="closeWindow(event)">Close window</button>
+            </div>
+            <div class="storage-content">
+                <p>Storage content here</p>
+            </div>
+        </div>
+    </section>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
