@@ -8,6 +8,7 @@
 body {
     background-color: #f7f7f7;
     height: 100dvh;
+    user-select: none;
 }
 
 img {
@@ -65,9 +66,17 @@ img {
     left: 350px;
     border-radius: 8px;
     background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.computer-window {
+    width: 720px;
+    height: 480px;
+}
+
+.storage-window {
     width: 400px;
     height: 400px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header {
@@ -99,8 +108,15 @@ img {
 
 .computer-content, .storage-content {
     display: flex;
-    gap: 16px;
+    gap: 24px;
     padding: 24px;
+}
+
+.computer-content {
+    height: 100%;
+    background-image: url('../assets/windows-walp.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 .computer-content div {
@@ -108,6 +124,10 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 12px;
+}
+
+.computer-content div h3 {
+    font-size: .8rem;
 }
 
 .computer-content div button {
@@ -125,6 +145,10 @@ img {
     transform: translateY(-10px);
 }
 
-.altShow_Window {
+.window_AboveAll {
+    z-index: 1;
+}
+
+.window_AltShow {
     display: block;
 }
